@@ -10,7 +10,6 @@ const smallSpacing = getTheme('smallSpacing');
 export const Content = styled.div`
   width: 100%;
   height: ${pxToRem(60)};
-  position: fixed;
   background-color: ${primaryMain};
   padding: ${smallSpacing};
 `;
