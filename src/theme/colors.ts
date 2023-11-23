@@ -12,14 +12,14 @@ export default {
   },
   primary: {
     light: '#fafafa',
-    main: '#0E3151',
-    dark: '#081E38',
+    main: '#0E3151', // header
+    dark: '#081E38', // bg
     contrast: '#183E62',
   },
   secondary: {
-    light: '#A6B0CA',
-    main: '#FD784E',
-    dark: '#fff',
+    light: '#A6B0CA', // color text card
+    main: '#2A557E', // focus
+    dark: '#FD784E',
     contrast: '#ffffff',
   },
   tertiary: {
