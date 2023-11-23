@@ -1,6 +1,6 @@
 {
-  "short_name": "Template",
-  "name": "@marcelxsilva",
+  "short_name": "IQD",
+  "name": "IQD - Prime Control",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +8,18 @@
       "type": "image/x-icon"
     },
     {
-      "src": "moon.png",
-      "type": "image/png",
+      "src": "favicon.ico",
+      "type": "image/ico",
       "sizes": "192x192"
     },
     {
-      "src": "moon.png",
-      "type": "image/png",
+      "src": "favicon.ico",
+      "type": "image/ico",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#273746",
-  "background_color": "#273746"
+  "theme_color": "#0E3151",
+  "background_color": "#0E3151"
 }
