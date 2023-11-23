@@ -6,7 +6,7 @@ type Props = {
   size?: number;
 };
 
-const Icon: FC<Props> = ({ onPress = () => {}, size = 35 }) => (
+const Icon: FC<Props> = ({ onPress = () => {}, size = 30 }) => (
   <svg
     style={{ cursor: 'pointer' }}
     width={size}

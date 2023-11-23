@@ -29,7 +29,7 @@ export const Section = styled.div`
 `;
 
 export const ChatView = styled.div`
-  width: ${pxToRem(400)};
+  width: ${pxToRem(500)};
   height: 100%;
   padding: ${mediumSpacing};
   background-color: ${primaryContrast};
@@ -86,11 +86,12 @@ export const SectionTextField = styled.div`
   height: ${pxToRem(50)};
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 `;
 
 export const TextField = styled.textarea`
-  width: 85%;
+  width: 90%;
+  height: ${pxToRem(50)};
   border-radius: ${smallRadius};
   border: 0;
   padding: ${smallSpacing};
