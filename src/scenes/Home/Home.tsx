@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Button } from '@material-ui/core';
-import { AppInfo, Header } from '~/components';
+import { AppInfo, Chat, Header } from '~/components';
 import { Content } from './styles';
 
 type Props = {
@@ -10,6 +10,7 @@ type Props = {
 const Home: FC<Props> = ({ onLogout }): JSX.Element => (
   <Content>
     <Header />
+    <Chat />
   </Content>
 );
 
