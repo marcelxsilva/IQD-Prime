@@ -1,0 +1,13 @@
+name: Building to PRD 🚀
+
+on:
+  release:
+    types: [released]
+
+jobs:
+
+  build:
+    name: Building ... 👷🏼‍♂️
+    runs-on: Ubuntu-20.04
+
+    steps:
