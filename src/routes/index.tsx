@@ -8,8 +8,8 @@ import { Path } from './routes.path';
 
 const NavigationApp: FC = () => (
   <Routes>
+    <Route path={Path.HOME} element={<Public render={<Home />} />} />
     <Route path={Path.LOGIN} element={<Public render={<Login />} />} />
-    <Route path={Path.HOME} element={<Private render={<Home />} />} />
   </Routes>
 );
 

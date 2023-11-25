@@ -36,8 +36,8 @@ export const ChatView = styled.div`
 
   display: flex;
   flex-direction: column;
-
   align-items: center;
+  justify-content: space-between;
 `;
 
 export const NameChat = styled.h3`
@@ -82,11 +82,13 @@ export const Bubble = styled.div<BubbleProps>`
 
 export const SectionTextField = styled.div`
   width: 100%;
-  margin-top: ${smallSpacing};
   height: ${pxToRem(50)};
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  position: relative;
+  bottom: 0px;
 `;
 
 export const TextField = styled.textarea`
