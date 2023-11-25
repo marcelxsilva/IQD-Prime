@@ -65,7 +65,6 @@ const Chat: FC = () => {
   };
 
   const onDone = () => {
-    console.log('DONE');
     setLoading(false);
   };
   return (
