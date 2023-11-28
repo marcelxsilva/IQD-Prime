@@ -80,7 +80,7 @@ const Chat: FC = () => {
       >
         <ChatView>
           <ImageIcon src={DeamingLogo} />
-          <NameChat>Deaming</NameChat>
+          <NameChat>Demming</NameChat>
 
           <SectionMessage>
             {msgs.map(({ isMe = false, msg = '', response = [] }) => (
@@ -106,7 +106,7 @@ const Chat: FC = () => {
 
           <SectionTextField>
             <TextField
-              placeholder="Pergunte algo ao Deaming .."
+              placeholder="Pergunte algo ao Demming .."
               value={value}
               onChange={(event) => {
                 setValue(event.target.value);
