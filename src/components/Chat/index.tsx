@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import CircularProgress from '@mui/material/CircularProgress';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 
+import { DeamingLogo } from '~/assets/img';
 import { Deaming, SendIcon } from '~/assets/svg';
 import { colors } from '~/theme';
 import { onRandomMsg } from '~/utils';
@@ -11,6 +12,7 @@ import If from '../If';
 import {
   Bubble,
   ChatView,
+  ImageIcon,
   NameChat,
   Section,
   SectionBubble,
@@ -69,8 +71,7 @@ const Chat: FC = () => {
   };
   return (
     <Section>
-      <Deaming onPress={() => setVisible(true)} />
-
+      <ImageIcon src={DeamingLogo} onClick={() => setVisible(true)} />
       <SwipeableDrawer
         anchor="right"
         open={visible}
@@ -78,7 +79,7 @@ const Chat: FC = () => {
         onOpen={() => setVisible(true)}
       >
         <ChatView>
-          <Deaming size={80} onPress={() => {}} />
+          <ImageIcon src={DeamingLogo} />
           <NameChat>Deaming</NameChat>
 
           <SectionMessage>

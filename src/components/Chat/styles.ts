@@ -3,6 +3,7 @@ import { getTheme, ifStyle, pxToRem, styled } from '~/utils';
 // spacings
 const mediumSpacing = getTheme('mediumSpacing');
 const smallSpacing = getTheme('smallSpacing');
+const largeSpacing = getTheme('largeSpacing');
 
 // Colors
 const primaryContrast = getTheme('primary.contrast');
@@ -19,8 +20,8 @@ const isLeft = ifStyle('left');
 
 export const Section = styled.div`
   position: absolute;
-  right: ${mediumSpacing};
-  bottom: ${mediumSpacing};
+  right: ${largeSpacing};
+  bottom: ${largeSpacing};
   cursor: pointer;
 
   &:hover {
@@ -100,5 +101,30 @@ export const TextField = styled.textarea`
 
   :focus {
     outline: none;
+  }
+`;
+
+export const ImageIcon = styled.img`
+  object-fit: cover;
+  width: ${pxToRem(75)};
+  height: ${pxToRem(75)};
+  border-radius: ${pxToRem(200)};
+  animation: pulse 1s linear infinite;
+
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(0.99);
+      transform: scale(0.99);
+    }
+
+    50% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+    100% {
+      -webkit-transform: scale(0.99);
+      transform: scale(0.99);
+    }
   }
 `;
